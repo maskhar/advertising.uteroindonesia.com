@@ -1,0 +1,92 @@
+.section {
+  background: var(--paper-dim);
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.card {
+  background: var(--paper);
+  padding: 34px 30px;
+}
+
+.card .n {
+  font-family: var(--font-display);
+  color: var(--red);
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.card h3 {
+  font-family: var(--font-display);
+  text-transform: none;
+  font-size: 1.14rem;
+  margin-bottom: 8px;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.card p {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.sectorStrip {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-top: 40px;
+}
+
+.sector {
+  flex: 1 1 180px;
+  padding: 26px 22px;
+  border-right: 1px solid var(--line);
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sector:last-child {
+  border-right: none;
+}
+
+.sector svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  stroke: var(--red);
+  fill: none;
+}
+
+@media (max-width: 920px) {
+  .whyGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+  .sector {
+    flex: 1 1 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .sector:last-child {
+    border-bottom: none;
+  }
+}

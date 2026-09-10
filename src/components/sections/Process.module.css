@@ -1,0 +1,47 @@
+.process {
+  counter-reset: step;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.step {
+  counter-increment: step;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.step::before {
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--font-display);
+  color: var(--amber);
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.step h3 {
+  font-size: 1.12rem;
+  font-family: var(--font-display);
+  text-transform: none;
+  margin-bottom: 6px;
+  color: #fff;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.step p {
+  color: #B9B4AC;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.processSection :global(.section-head) p {
+  color: #B9B4AC;
+}
+
+.title {
+  color: #fff;
+}

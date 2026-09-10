@@ -1,0 +1,37 @@
+.marqueeWrap {
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 26px 0;
+  background: var(--paper-dim);
+}
+
+.marquee {
+  display: flex;
+  gap: 52px;
+  white-space: nowrap;
+  width: max-content;
+  animation: scroll 42s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--ink);
+  opacity: 0.42;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

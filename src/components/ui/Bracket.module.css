@@ -1,0 +1,33 @@
+.bracket {
+  position: relative;
+  display: inline-block;
+}
+
+.bracket::before,
+.bracket::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--red);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.bracket::before {
+  top: -6px;
+  left: -6px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.bracket::after {
+  bottom: -6px;
+  right: -6px;
+  border-left: none;
+  border-top: none;
+}
+
+.block {
+  display: block;
+}

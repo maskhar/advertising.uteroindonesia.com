@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 9, 8, 0.5);
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  max-width: 80vw;
+  background: var(--paper);
+  z-index: 71;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.15);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.close {
+  background: none;
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+  font-size: 0.96rem;
+  color: var(--ink);
+  opacity: 0.85;
+}
+
+.link:hover {
+  color: var(--red);
+  opacity: 1;
+}
+
+.link.active {
+  color: var(--red);
+  opacity: 1;
+}

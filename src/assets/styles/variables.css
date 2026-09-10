@@ -1,0 +1,41 @@
+:root {
+  /* Brand Colors */
+  --red: #E31E24;
+  --red-dark: #9E1319;
+  --red-deep: #7A0E13;
+  --amber: #FFB020;
+
+  /* Neutral Colors */
+  --ink: #17130F;
+  --ink-soft: #3A342E;
+  --paper: #FBF8F3;
+  --paper-dim: #F1ECE3;
+  --steel: #1C1D1F;
+  --steel-2: #2B2C2F;
+  --line: #E7DFD1;
+
+  /* Layout */
+  --maxw: 1180px;
+  --radius: 2px;
+
+  /* Typography */
+  --font-display: 'Anton', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing Scale */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 72px;
+
+  /* Breakpoints */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 920px;
+  --bp-xl: 1024px;
+
+  /* Shadows */
+  --shadow-card: 0 8px 24px rgba(23, 19, 15, 0.08);
+  --shadow-wa: 0 8px 22px rgba(0, 0, 0, 0.28);
+}

@@ -1,0 +1,86 @@
+export const gallery = [
+  {
+    id: 'cp-006-111',
+    title: 'Vertical banner terpasang di simpang jalan',
+    image: 'https://placehold.co/600x800/17130F/E31E24?text=Vertical+Banner',
+    thumb: 'https://placehold.co/300x400/17130F/E31E24?text=Vertical+Banner',
+  },
+  {
+    id: 'cp-008-160',
+    title: 'Videotron & LED wall panggung festival',
+    image: 'https://placehold.co/800x600/17130F/E31E24?text=Videotron',
+    thumb: 'https://placehold.co/400x300/17130F/E31E24?text=Videotron',
+  },
+  {
+    id: 'cp-006-108',
+    title: 'Bangunan videotron di titik ramai',
+    image: 'https://placehold.co/600x800/17130F/E31E24?text=Videotron+Bangunan',
+    thumb: 'https://placehold.co/300x400/17130F/E31E24?text=Videotron',
+  },
+  {
+    id: 'cp-006-128',
+    title: 'Neon box custom, menyala di malam hari',
+    image: 'https://placehold.co/800x600/17130F/E31E24?text=Neon+Box',
+    thumb: 'https://placehold.co/400x300/17130F/E31E24?text=Neon+Box',
+  },
+  {
+    id: 'cp-006-114',
+    title: 'Pylon sign & signage gedung',
+    image: 'https://placehold.co/600x800/17130F/E31E24?text=Pylon+Sign',
+    thumb: 'https://placehold.co/300x400/17130F/E31E24?text=Pylon+Sign',
+  },
+  {
+    id: 'cp-005-040',
+    title: 'Signage tower / papan penunjuk gedung',
+    image: 'https://placehold.co/800x600/17130F/E31E24?text=Signage+Tower',
+    thumb: 'https://placehold.co/400x300/17130F/E31E24?text=Signage+Tower',
+  },
+  {
+    id: 'cp-005-044',
+    title: 'Billboard di jalan utama',
+    image: 'https://placehold.co/600x800/17130F/E31E24?text=Billboard',
+    thumb: 'https://placehold.co/300x400/17130F/E31E24?text=Billboard',
+  },
+  {
+    id: 'cp-006-115',
+    title: 'Produksi huruf timbul dengan mesin CNC',
+    image: 'https://placehold.co/800x600/17130F/E31E24?text=CNC+Cutting',
+    thumb: 'https://placehold.co/400x300/17130F/E31E24?text=CNC+Cutting',
+  },
+  {
+    id: 'cp-006-118',
+    title: 'Digital printing large format',
+    image: 'https://placehold.co/600x800/17130F/E31E24?text=Digital+Printing',
+    thumb: 'https://placehold.co/300x400/17130F/E31E24?text=Digital+Printing',
+  },
+  {
+    id: 'cp-006-078',
+    title: 'Papan nama custom, material logam',
+    image: 'https://placehold.co/800x600/17130F/E31E24?text=Papan+Nama',
+    thumb: 'https://placehold.co/400x300/17130F/E31E24?text=Papan+Nama',
+  },
+  {
+    id: 'cp-005-037',
+    title: 'Branding kendaraan / vehicle wrap',
+    image: 'https://placehold.co/600x800/17130F/E31E24?text=Vehicle+Wrap',
+    thumb: 'https://placehold.co/300x400/17130F/E31E24?text=Vehicle+Wrap',
+  },
+  {
+    id: 'cp-006-099',
+    title: 'Vehicle branding logistik',
+    image: 'https://placehold.co/800x600/17130F/E31E24?text=Vehicle+Branding',
+    thumb: 'https://placehold.co/400x300/17130F/E31E24?text=Vehicle+Branding',
+  },
+  {
+    id: 'cp-006-141',
+    title: 'Instalasi interior interaktif berbasis LED',
+    image: 'https://placehold.co/600x800/17130F/E31E24?text=Interior+LED',
+    thumb: 'https://placehold.co/300x400/17130F/E31E24?text=Interior+LED',
+  },
+  {
+    id: 'cp-002-004',
+    title: 'Signage kantor Utero Indonesia',
+    image: 'https://placehold.co/800x600/17130F/E31E24?text=Signage+Kantor',
+    thumb: 'https://placehold.co/400x300/17130F/E31E24?text=Signage+Kantor',
+  },
+]

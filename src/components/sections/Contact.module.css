@@ -1,0 +1,103 @@
+.contact {
+  background: var(--ink);
+  color: #fff;
+}
+
+.contact :global(.section-head) p {
+  color: #B9B4AC;
+}
+
+.title {
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.rowBox {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding-bottom: 22px;
+}
+
+.rowBox h3 {
+  font-family: var(--font-display);
+  text-transform: none;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.rowBox a,
+.rowBox span {
+  display: block;
+  color: #C9C1B4;
+  font-size: 0.94rem;
+  margin-bottom: 4px;
+}
+
+.rowBox a:hover {
+  color: var(--amber);
+}
+
+.branches h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.branches p {
+  color: #B9B4AC;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+.branchList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.branch h4 {
+  font-family: var(--font-body);
+  color: var(--amber);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.branch p {
+  margin: 0 0 4px;
+  font-size: 0.88rem;
+  color: #C9C1B4;
+}
+
+.branch a {
+  color: #C9C1B4;
+  font-size: 0.88rem;
+}
+
+.branch a:hover {
+  color: var(--amber);
+}
+
+@media (max-width: 920px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .branchList {
+    grid-template-columns: 1fr;
+  }
+}

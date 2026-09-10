@@ -1,0 +1,93 @@
+/* ---------- Layout ---------- */
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Theme Variants ---------- */
+.dark {
+  background: var(--steel);
+  color: #fff;
+}
+
+.dark .eyebrow {
+  color: var(--amber);
+}
+
+.dark .eyebrow::before {
+  background: var(--amber);
+}
+
+/* ---------- Section Base ---------- */
+.section {
+  padding: 96px 0;
+}
+
+.section-head {
+  max-width: 640px;
+  margin-bottom: 56px;
+}
+
+.section-head p {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  margin-top: 16px;
+}
+
+/* ---------- Display Text ---------- */
+.disp {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+/* ---------- Spacing Utilities ---------- */
+.u-pt-xs { padding-top: var(--spacing-xs); }
+.u-pt-sm { padding-top: var(--spacing-sm); }
+.u-pt-md { padding-top: var(--spacing-md); }
+.u-pt-lg { padding-top: var(--spacing-lg); }
+.u-pt-xl { padding-top: var(--spacing-xl); }
+
+.u-pb-xs { padding-bottom: var(--spacing-xs); }
+.u-pb-sm { padding-bottom: var(--spacing-sm); }
+.u-pb-md { padding-bottom: var(--spacing-md); }
+.u-pb-lg { padding-bottom: var(--spacing-lg); }
+.u-pb-xl { padding-bottom: var(--spacing-xl); }
+
+.u-mt-xs { margin-top: var(--spacing-xs); }
+.u-mt-sm { margin-top: var(--spacing-sm); }
+.u-mt-md { margin-top: var(--spacing-md); }
+.u-mt-lg { margin-top: var(--spacing-lg); }
+.u-mt-xl { margin-top: var(--spacing-xl); }
+
+.u-mb-xs { margin-bottom: var(--spacing-xs); }
+.u-mb-sm { margin-bottom: var(--spacing-sm); }
+.u-mb-md { margin-bottom: var(--spacing-md); }
+.u-mb-lg { margin-bottom: var(--spacing-lg); }
+.u-mb-xl { margin-bottom: var(--spacing-xl); }
+
+/* ---------- Display Utilities ---------- */
+.u-flex { display: flex; }
+.u-flex-col { flex-direction: column; }
+.u-items-center { align-items: center; }
+.u-justify-between { justify-content: space-between; }
+.u-flex-wrap { flex-wrap: wrap; }
+.u-gap-sm { gap: var(--spacing-sm); }
+.u-gap-md { gap: var(--spacing-md); }
+
+/* ---------- Text Utilities ---------- */
+.u-center { text-align: center; }
+.u-upper { text-transform: uppercase; }
+.u-bold { font-weight: 700; }
+
+/* ---------- Responsive Helpers ---------- */
+@media (max-width: 920px) {
+  .u-hide-md { display: none; }
+}
+
+@media (max-width: 560px) {
+  .u-hide-sm { display: none; }
+}
