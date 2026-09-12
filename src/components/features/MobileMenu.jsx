@@ -7,7 +7,7 @@ function MobileMenu({ open, onClose, activeSection }) {
     { href: '#layanan', label: 'Layanan' },
     { href: '#galeri', label: 'Galeri' },
     { href: '#proses', label: 'Proses Kerja' },
-    { href: '#interior', label: 'Interior & Eksterior' },
+    { href: '#interior', label: 'Produk' },
     { href: '#event', label: 'Event' },
     { href: '#kenapa', label: 'Kenapa Kami' },
     { href: '#kontak', label: 'Kontak' },

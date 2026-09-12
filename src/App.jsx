@@ -8,6 +8,7 @@ import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import MobileMenu from './components/features/MobileMenu'
 import Lightbox from './components/features/Lightbox'
+import Slideshow from './components/features/Slideshow'
 import WAFloat from './components/features/WAFloat'
 
 import Hero from './components/sections/Hero'
@@ -43,11 +44,7 @@ function App() {
       <Header activeSection={activeSection} onOpenMenu={() => setMenuOpen(true)} />
       <main>
         <div id="top">
-          <img
-            src="/adv amril.png"
-            alt="Adv Amril"
-            style={{ display: 'block', width: '100%', height: '700px', objectFit: 'cover' }}
-          />
+          <Slideshow />
           <Hero />
         </div>
         <About />
