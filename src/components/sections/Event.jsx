@@ -19,7 +19,7 @@ function Event() {
           />
         </div>
         <div className={styles.cp}>
-          <Eyebrow>Aktivasi Brand</Eyebrow>
+          <Eyebrow>Produk</Eyebrow>
           <h2>Dukungan Promosi &amp; Publikasi Dalam &amp; Luar Ruang Untuk Event</h2>
           <p>
             Dari panggung festival, booth pameran, sampai backdrop launching produk &mdash; kami

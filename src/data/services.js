@@ -11,13 +11,13 @@ export const services = [
       'Desain Materi Promosi',
       'UI Visual Campaign',
     ],
-    image: 'https://placehold.co/640x480/17130F/E31E24?text=Desain',
+    image: '/desain.png',
     imageAlt: 'Desain dan identitas visual Utero Advertising',
   },
   {
     id: 2,
     num: '02',
-    title: 'Reklame Luar Ruang',
+    title: 'Reklame dalam & luar ruang',
     description:
       'Dominasi ruang publik di titik strategis: billboard, videotron, neon box, papan nama, huruf timbul, pylon sign, baliho, spanduk, hingga umbul-umbul.',
     tags: [
@@ -29,7 +29,7 @@ export const services = [
       'Umbul-umbul',
     ],
     image: 'https://placehold.co/640x480/17130F/E31E24?text=Reklame+Luar',
-    imageAlt: 'Reklame luar ruang Utero Advertising',
+    imageAlt: 'Reklame dalam & luar ruang Utero Advertising',
   },
   {
     id: 3,
@@ -65,7 +65,7 @@ export const services = [
   {
     id: 5,
     num: '05',
-    title: 'Interior & Booth',
+    title: 'interior,eksterior & Booth',
     description:
       'Solusi desain & build interior komersial untuk pembukaan usaha baru, mulai retail, kantor, hingga booth pameran yang imersif.',
     tags: [
@@ -80,7 +80,7 @@ export const services = [
   {
     id: 6,
     num: '06',
-    title: 'Dukungan Event',
+    title: 'Dukungan & Promosi Event',
     description:
       'Aktivasi brand yang mencuri perhatian di event, expo, dan launching — dari konsep booth, stage & backdrop, sampai event branding.',
     tags: [

@@ -6,7 +6,7 @@ const NAV = [
   { href: '#layanan', id: 'layanan', label: 'Layanan' },
   { href: '#galeri', id: 'galeri', label: 'Galeri' },
   { href: '#proses', id: 'proses', label: 'Proses Kerja' },
-  { href: '#interior', id: 'interior', label: 'Interior & Eksterior' },
+  { href: '#interior', id: 'interior', label: 'Produk' },
   { href: '#event', id: 'event', label: 'Event' },
   { href: '#kenapa', id: 'kenapa', label: 'Kenapa Kami' },
   { href: '#kontak', id: 'kontak', label: 'Kontak' },
