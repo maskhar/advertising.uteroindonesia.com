@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#E31E24"/>
-  <path d="M17 14v25a15 15 0 0 0 30 0V14" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.42 124.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cc2127;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M9.04,9.26l33.02,31.81c-7.39,4.59-12.31,12.77-12.31,22.11,0,14.36,11.64,26,26,26s26.01-11.64,26.01-26-11.64-26-26.01-26c-1.36,0-2.69.1-3.98.3L29.54,15.93c9.71-5.47,21.18-7.98,33.01-6.47,29.4,3.75,50.39,31,46.65,60.54-3.73,29.55-30.85,50.64-60.25,46.89C19.55,113.13-1.44,85.89,2.29,56.35c1.23-9.7,4.97-18.48,10.49-25.77l-3.74-21.31Z"/>
 </svg>
