@@ -21,7 +21,7 @@ function Services() {
 
         <div className={styles.list}>
           {services.map((service, index) => (
-            <div key={service.id} className={styles.row}>
+            <div key={service.id} id={`layanan-${service.id}`} className={styles.row}>
               <div className={styles.num}>{service.num}</div>
               <div className={styles.txt}>
                 <h3>{service.title}</h3>

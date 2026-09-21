@@ -9,7 +9,7 @@ function WhyUs() {
       <div className="wrap">
         <div className="section-head">
           <Eyebrow>Mengapa Memilih Utero Advertising</Eyebrow>
-          <h2>Enam Alasan Klien Bertahan Bersama Kami</h2>
+          <h2>Enam Alasan Klien Bersama Kami</h2>
         </div>
 
         <div className={styles.whyGrid}>

@@ -11,7 +11,7 @@ export const services = [
       'Desain Materi Promosi',
       'UI Visual Campaign',
     ],
-    image: '/desain.png',
+    image: '/desain.webp',
     imageAlt: 'Desain dan identitas visual Utero Advertising',
   },
   {
@@ -28,7 +28,7 @@ export const services = [
       'Baliho & Spanduk',
       'Umbul-umbul',
     ],
-    image: 'https://placehold.co/640x480/17130F/E31E24?text=Reklame+Luar',
+    image: '/Reklame_Luar.webp',
     imageAlt: 'Reklame dalam & luar ruang Utero Advertising',
   },
   {
@@ -43,7 +43,7 @@ export const services = [
       'Perhitungan Konstruksi Aman',
       'Media Placement',
     ],
-    image: 'https://placehold.co/640x480/17130F/E31E24?text=Perizinan',
+    image: '/perijinan.webp',
     imageAlt: 'Layanan perizinan dan pajak reklame',
   },
   {
@@ -59,7 +59,7 @@ export const services = [
       'CNC & Custom Fabrication',
       'Packaging Printing',
     ],
-    image: 'https://placehold.co/640x480/17130F/E31E24?text=Percetakan',
+    image: '/percetakan.webp',
     imageAlt: 'Fasilitas percetakan dan produksi Utero Advertising',
   },
   {
@@ -74,7 +74,7 @@ export const services = [
       'Display Produk',
       'Branding Environment',
     ],
-    image: 'https://placehold.co/640x480/17130F/E31E24?text=Interior',
+    image: '/Interior,Eksterior&Booth.webp',
     imageAlt: 'Desain dan build interior serta booth',
   },
   {
@@ -89,7 +89,7 @@ export const services = [
       'Stage & Backdrop',
       'Event Support System',
     ],
-    image: 'https://placehold.co/640x480/17130F/E31E24?text=Event',
+    image: '/Dukungan dan Promosi Event.webp',
     imageAlt: 'Dukungan event dan aktivasi brand',
   },
 ]
