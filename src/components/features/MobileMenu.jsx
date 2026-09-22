@@ -1,17 +1,25 @@
+import { useState } from 'react'
+import { services } from '../../data/services'
 import styles from './MobileMenu.module.css'
 
 function MobileMenu({ open, onClose, activeSection }) {
+  const [produkOpen, setProdukOpen] = useState(false)
+
   if (!open) return null
 
   const links = [
     { href: '#layanan', label: 'Layanan' },
     { href: '#galeri', label: 'Galeri' },
     { href: '#proses', label: 'Proses Kerja' },
-    { href: '#interior', label: 'Produk' },
     { href: '#event', label: 'Event' },
     { href: '#kenapa', label: 'Kenapa Kami' },
     { href: '#kontak', label: 'Kontak' },
   ]
+
+  const closeAll = () => {
+    setProdukOpen(false)
+    onClose()
+  }
 
   return (
     <div className={styles.overlay} role="dialog" aria-modal="true">
@@ -24,6 +32,31 @@ function MobileMenu({ open, onClose, activeSection }) {
           </button>
         </div>
         <nav className={styles.links} aria-label="Navigasi mobile">
+          <button
+            type="button"
+            className={`${styles.produkBtn} ${
+              activeSection === 'interior' ? styles.active : ''
+            }`}
+            onClick={() => setProdukOpen((open) => !open)}
+            aria-expanded={produkOpen}
+          >
+            <span>Produk</span>
+            <span className={`${styles.caret} ${produkOpen ? styles.caretOpen : ''}`} />
+          </button>
+          {produkOpen && (
+            <div className={styles.submenu}>
+              {services.map((service) => (
+                <a
+                  key={service.id}
+                  href={`#layanan-${service.id}`}
+                  className={styles.subLink}
+                  onClick={closeAll}
+                >
+                  {service.title}
+                </a>
+              ))}
+            </div>
+          )}
           {links.map((link) => {
             const id = link.href.replace('#', '')
             return (
@@ -37,6 +70,7 @@ function MobileMenu({ open, onClose, activeSection }) {
               </a>
             )
           })}
+          <span className={styles.link}>Artikel</span>
         </nav>
       </div>
     </div>

@@ -1,0 +1,93 @@
+.imgBtn {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: var(--ink);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imgBtn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(227, 30, 36, 0);
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.imgBtn:hover::after {
+  background: rgba(227, 30, 36, 0.28);
+}
+
+.imgBtn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.imgBtn:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(10, 9, 8, 0.45);
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.arrow:hover {
+  background: var(--red);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.arrow:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+.arrowPrev {
+  left: 14px;
+}
+
+.arrowNext {
+  right: 14px;
+}
+
+.counter {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  background: rgba(10, 9, 8, 0.6);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  pointer-events: none;
+}

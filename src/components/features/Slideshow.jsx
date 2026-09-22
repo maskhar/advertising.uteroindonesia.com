@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import styles from './Slideshow.module.css'
 
-const SLIDES = ['/adv amril.png', '/adv amril 2.png', '/adv amril 3.png', '/adv amril 4.png']
+const SLIDES = ['/adv amril.webp', '/adv amril 2.webp', '/adv amril 3.webp', '/adv amril 4.webp']
 
 function Slideshow() {
   const [index, setIndex] = useState(0)

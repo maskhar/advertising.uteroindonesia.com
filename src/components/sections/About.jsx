@@ -1,22 +1,47 @@
 import Eyebrow from '../ui/Eyebrow'
 import Bracket from '../ui/Bracket'
+import Lightbox from '../features/Lightbox'
+import { useLightbox } from '../../hooks/useLightbox'
 import styles from './About.module.css'
 
 const PILLS = ['Desain', 'Perizinan Reklame', 'Produksi', 'Pemasangan', 'Perawatan']
 
+const OFFICE = [
+  {
+    image: '/kantor utero.webp',
+    title: 'Kantor Pusat — Malang',
+  },
+]
+
 function About() {
+  const lightbox = useLightbox(OFFICE)
+
   return (
     <section id="tentang" className="section">
       <div className={`wrap ${styles.grid}`}>
         <Bracket className={styles.figure}>
           <figure>
-            <img
-              src="https://placehold.co/800x600/17130F/E31E24?text=Kantor+Utero"
-              alt="Kantor pusat Utero Advertising di Malang"
-            />
+            <button
+              type="button"
+              onClick={() => lightbox.open(0)}
+              aria-label="Lihat gambar Kantor pusat Utero Advertising di Malang"
+            >
+              <img
+                src="/kantor utero.webp"
+                alt="Kantor pusat Utero Advertising di Malang"
+              />
+            </button>
             <figcaption className={styles.figcaption}>Kantor Pusat &mdash; Malang</figcaption>
           </figure>
         </Bracket>
+
+        <Lightbox
+          isOpen={lightbox.isOpen}
+          item={lightbox.item}
+          onClose={lightbox.close}
+          onNext={lightbox.next}
+          onPrev={lightbox.prev}
+        />
         <div className={styles.copy}>
           <Eyebrow>Lebih Dari Sekadar Vendor</Eyebrow>
           <h2 className={styles.title}>
