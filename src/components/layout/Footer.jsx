@@ -7,8 +7,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={`wrap ${styles.row}`}>
         <span>
-          &copy; {year} PT Utero Kreatif Indonesia &mdash; Utero Advertising. &ldquo;Ide Tanpa
-          Realisasi Sama Dengan Sampah.&rdquo;
+          &copy; {year} Utero Indonesia &mdash; Utero Advertising. &ldquo;More Than Advertising.&rdquo;
         </span>
         <span>Malang &middot; Surabaya &middot; Mojokerto &middot; Madiun</span>
       </div>

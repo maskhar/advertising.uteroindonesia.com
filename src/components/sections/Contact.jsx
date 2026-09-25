@@ -16,7 +16,7 @@ function Contact() {
       <div className="wrap">
         <div className="section-head">
           <Eyebrow light>Hubungi Kami</Eyebrow>
-          <h2 className={styles.title}>Mari Bicarakan Reklame Anda</h2>
+          <h2 className={styles.title}>Mari Bicarakan Kebutuhan Anda</h2>
           <p>
             Konsultasi gratis &mdash; tim kami membalas WhatsApp dalam jam kerja. Jelaskan
             kebutuhan, nanti kami bantu pilihkan solusi &amp; anggarannya.
@@ -65,6 +65,13 @@ function Contact() {
                 </div>
               ))}
             </div>
+            <iframe
+              className={styles.map}
+              src="https://www.google.com/maps?q=Rumah+Merah+OXYZ,+Jalan+Bantaran+1+No.+25,+Lowokwaru,+Kota+Malang&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Lokasi Utero Malang"
+            />
           </div>
         </div>
       </div>

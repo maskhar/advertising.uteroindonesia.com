@@ -92,6 +92,22 @@
   color: var(--amber);
 }
 
+.map {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 240px;
+  margin-top: 32px;
+  border: 0;
+  border-radius: var(--radius);
+  filter: invert(0.92) hue-rotate(180deg) saturate(0.35) contrast(0.9) brightness(0.92);
+  transition: filter 0.5s ease;
+}
+
+.map:hover {
+  filter: none;
+}
+
 @media (max-width: 920px) {
   .grid {
     grid-template-columns: 1fr;

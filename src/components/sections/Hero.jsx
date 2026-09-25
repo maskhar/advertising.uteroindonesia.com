@@ -13,7 +13,7 @@ function Hero() {
     <section className={styles.hero} style={{ padding: 0 }}>
       <img
         className={styles.bg}
-        src="https://placehold.co/1600x900/0f0d0b/0f0d0b"
+        src="/photos/hero.webp"
         alt=""
       />
       <div className={`wrap ${styles.inner}`}>
