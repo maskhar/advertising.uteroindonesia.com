@@ -1,13 +1,28 @@
+import { useState } from 'react'
 import Eyebrow from '../ui/Eyebrow'
+import Lightbox from '../features/Lightbox'
+import ZoomGallery from '../features/ZoomGallery'
+import { useLightbox } from '../../hooks/useLightbox'
 import styles from './Interior.module.css'
 
 const MINI = [
-  'https://placehold.co/400x300/17130F/E31E24?text=Interior',
-  'https://placehold.co/400x300/17130F/E31E24?text=Eksterior',
-  'https://placehold.co/400x300/17130F/E31E24?text=Signage',
+  '/photos/galeri-13-interior-led.webp',
+  '/photos/galeri-06-signage-tower.webp',
+  '/photos/galeri-10-papan-nama.webp',
+]
+
+const ITEMS = [
+  { image: '/Interior,Eksterior&Booth.webp', title: 'Desain interior bangunan usaha Utero Advertising' },
+  ...MINI.map((image, index) => ({
+    image,
+    title: ['Desain Interior', 'Desain Eksterior', 'Signage'][index],
+  })),
 ]
 
 function Interior() {
+  const lightbox = useLightbox(ITEMS)
+  const [view, setView] = useState(0)
+
   return (
     <section id="interior" style={{ padding: 0 }}>
       <div className={styles.split}>
@@ -20,19 +35,31 @@ function Interior() {
             dengan konsep ruang.
           </p>
           <div className={styles.miniRow}>
-            {MINI.map((src) => (
-              <img key={src} src={src} alt="Interior dan eksterior bangunan usaha" loading="lazy" />
+            {MINI.map((src, index) => (
+              <button
+                key={src}
+                type="button"
+                className={styles.miniBtn}
+                onClick={() => setView(index + 1)}
+                aria-label={`Lihat gambar ${ITEMS[index + 1].title}`}
+              >
+                <img src={src} alt={ITEMS[index + 1].title} loading="lazy" />
+              </button>
             ))}
           </div>
         </div>
-        <div className={styles.ph}>
-          <img
-            src="https://placehold.co/800x600/17130F/E31E24?text=Interior+Eksterior"
-            alt="Desain interior bangunan usaha Utero Advertising"
-            loading="lazy"
-          />
+        <div className={styles.zoom}>
+          <ZoomGallery items={ITEMS} view={view} onViewChange={setView} onOpen={lightbox.open} />
         </div>
       </div>
+
+      <Lightbox
+        isOpen={lightbox.isOpen}
+        item={lightbox.item}
+        onClose={lightbox.close}
+        onNext={lightbox.next}
+        onPrev={lightbox.prev}
+      />
     </section>
   )
 }
