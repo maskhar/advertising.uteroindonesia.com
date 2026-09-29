@@ -16,6 +16,7 @@ import About from './components/sections/About'
 import Services from './components/sections/Services'
 import Gallery from './components/sections/Gallery'
 import Process from './components/sections/Process'
+import ProdukSections from './components/sections/ProdukSections'
 import Interior from './components/sections/Interior'
 import Event from './components/sections/Event'
 import WhyUs from './components/sections/WhyUs'
@@ -51,6 +52,7 @@ function App() {
         <Services />
         <Gallery onOpen={lightbox.open} />
         <Process />
+        <ProdukSections />
         <Interior />
         <Event />
         <WhyUs />
