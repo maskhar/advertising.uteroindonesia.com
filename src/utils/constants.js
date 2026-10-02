@@ -4,7 +4,6 @@ export const PHONE_MOBILE = '081 999 900 900'
 export const EMAIL = 'marketingutero@gmail.com'
 export const WEBSITE = 'advertising.uteroindonesia.com'
 export const ADDRESS = 'Rumah Merah OXYZ, Jalan Bantaran 1 No. 25, Lowokwaru, Kota Malang'
-export const COMPANY = 'PT Utero Kreatif Indonesia'
 
 export const BRANCHES = [
   {
