@@ -67,7 +67,7 @@ function Contact() {
             </div>
             <iframe
               className={styles.map}
-              src="https://www.google.com/maps?q=Rumah+Merah+OXYZ,+Jalan+Bantaran+1+No.+25,+Lowokwaru,+Kota+Malang&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7902.9418734609!2d112.62802797770998!3d-7.9501879999999945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629c5e8a20281%3A0x3ff201ddaa440c96!2sPT%20UTERO%20KREATIF%20INDONESIA!5e0!3m2!1sen!2sus!4v1791013978190!5m2!1sen!2sus"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Lokasi Utero Malang"

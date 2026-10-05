@@ -2,12 +2,11 @@
   position: relative;
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   border: 0;
-  background: var(--ink);
+  background: transparent;
   overflow: hidden;
   cursor: pointer;
 }
@@ -29,7 +28,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .imgBtn:focus-visible {

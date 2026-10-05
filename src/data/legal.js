@@ -1,4 +1,4 @@
-export const legal = {
+const legal = {
   company: 'PT Utero Kreatif Indonesia',
   haki: 'Utero Indonesia',
   siup: '517/0687/35.73.313/2019',

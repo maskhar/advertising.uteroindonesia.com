@@ -44,6 +44,15 @@ function CompanyProfile() {
                 <PdfIcon />
                 Capability Deck &ndash; Utero Advertising (PDF)
               </a>
+              <a
+                className={styles.link}
+                href="https://dadikwahyuchang.id/"
+                target="_blank"
+                rel="noopener"
+              >
+                <PdfIcon />
+                Daftar Riwayat Hidup &ndash; Dadik Wahyu Chang
+              </a>
             </div>
           </div>
         </Bracket>

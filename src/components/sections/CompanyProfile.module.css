@@ -23,8 +23,8 @@
 
 .links {
   display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+  gap: 12px;
+  flex-wrap: nowrap;
 }
 
 .link {
@@ -32,9 +32,9 @@
   align-items: center;
   gap: 12px;
   border: 1.5px solid rgba(255, 255, 255, 0.35);
-  padding: 14px 18px;
+  padding: 13px 15px;
   border-radius: var(--radius);
-  font-size: 0.86rem;
+  font-size: 0.82rem;
   font-weight: 700;
   transition: 0.2s;
   color: #fff;
@@ -57,5 +57,9 @@
   .cta {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .links {
+    flex-wrap: wrap;
   }
 }
