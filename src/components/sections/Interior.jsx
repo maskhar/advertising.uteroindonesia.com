@@ -27,7 +27,7 @@ function Interior() {
     <section id="interior" style={{ padding: 0 }}>
       <div className={styles.split}>
         <div className={styles.cp}>
-          <Eyebrow>Pendukung Pembukaan Usaha</Eyebrow>
+          <Eyebrow>interior,eksterior & Booth</Eyebrow>
           <h2>Interior &amp; Eksterior Bangunan Usaha, Siap Grand Opening</h2>
           <p>
             Selain reklame, kami juga membantu tampilan fisik usaha Anda dari luar &amp; dalam &mdash;

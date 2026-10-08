@@ -9,7 +9,7 @@ const SECTIONS = [
   {
     id: 1,
     anchor: 'produk-desain',
-    eyebrow: 'Desain & Kreatif',
+    eyebrow: 'Desain & Identitas Visual',
     title: 'Identitas Visual yang Kuat Sebelum Turun ke Produksi',
     description:
       'Membangun identitas visual yang kuat & strategis supaya reklame Anda konsisten dengan brand di semua media.',
@@ -26,7 +26,7 @@ const SECTIONS = [
   {
     id: 2,
     anchor: 'produk-reklame',
-    eyebrow: 'Media Luar Ruang',
+    eyebrow: 'Reklame dalam & luar ruang',
     title: 'Reklame Dalam & Luar Ruang di Titik Strategis',
     description:
       'Dominasi ruang publik di titik strategis: billboard, videotron, neon box, papan nama, huruf timbul, pylon sign, baliho, spanduk, hingga umbul-umbul.',
@@ -43,7 +43,7 @@ const SECTIONS = [
   {
     id: 3,
     anchor: 'produk-perizinan',
-    eyebrow: 'Kepatuhan & Regulasi',
+    eyebrow: 'Perizinan & Pajak Reklame',
     title: 'Perizinan & Pajak Reklame, Kami yang Urus',
     description:
       'Kami urus perizinan reklame dan pajak reklame ke instansi terkait, plus perhitungan konstruksi supaya reklame Anda aman & sesuai regulasi.',
@@ -60,7 +60,7 @@ const SECTIONS = [
   {
     id: 4,
     anchor: 'produk-percetakan',
-    eyebrow: 'Produksi In-House',
+    eyebrow: 'Percetakan & Produksi',
     title: 'Percetakan & Produksi In-House, Mutu Terjaga',
     description:
       'Fasilitas produksi in-house: digital printing indoor & outdoor, large format, offset, sablon, hingga fabrikasi custom & CNC cutting.',
@@ -79,12 +79,7 @@ const SECTIONS = [
 function ProdukSection({ data }) {
   const items = [
     { image: data.image, title: data.imageAlt },
-    ...(data.miniImages
-      ? data.miniImages.map((src, i) => ({ image: src, title: data.tags[i] }))
-      : data.tags.map((tag) => ({
-          image: `https://placehold.co/400x300/17130F/E31E24?text=${encodeURIComponent(tag)}`,
-          title: tag,
-        }))),
+    ...data.miniImages.map((src, i) => ({ image: src, title: data.tags[i] })),
   ]
   const lightbox = useLightbox(items)
   const [view, setView] = useState(0)

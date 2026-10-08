@@ -30,7 +30,7 @@ function Event() {
           <ZoomGallery items={ITEMS} view={view} onViewChange={setView} onOpen={lightbox.open} />
         </div>
         <div className={styles.cp}>
-          <Eyebrow>Produk</Eyebrow>
+          <Eyebrow>Dukungan & Promosi Event</Eyebrow>
           <h2>Dukungan Promosi &amp; Publikasi Dalam &amp; Luar Ruang Untuk Event</h2>
           <p>
             Dari panggung festival, booth pameran, sampai backdrop launching produk &mdash; kami
