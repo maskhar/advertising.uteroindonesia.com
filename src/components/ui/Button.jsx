@@ -2,7 +2,6 @@ import styles from './Button.module.css'
 
 const variantMap = {
   primary: styles.primary,
-  outline: styles.outline,
   outlineLight: styles.outlineLight,
 }
 
