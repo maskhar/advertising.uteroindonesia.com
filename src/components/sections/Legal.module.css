@@ -30,3 +30,33 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 560px) {
+  .box {
+    padding: 24px 18px;
+    gap: 26px;
+  }
+
+  .dl {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    font-size: 0.84rem;
+  }
+
+  .dl dt {
+    margin-top: 14px;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .dl dt:first-child {
+    margin-top: 0;
+  }
+
+  .dl dd {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}

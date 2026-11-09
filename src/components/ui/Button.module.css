@@ -28,17 +28,6 @@
   background: var(--red-dark);
 }
 
-.outline {
-  background: transparent;
-  color: var(--ink);
-  border-color: var(--ink);
-}
-
-.outline:hover {
-  background: var(--ink);
-  color: #fff;
-}
-
 .outlineLight {
   background: transparent;
   color: #fff;

@@ -2,7 +2,7 @@ export const sectors = [
   {
     id: 1,
     label: 'Brand & Korporasi',
-    paths: ['M8 8V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3'],
+    paths: ['M3 7h18v13H3z', 'M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2', 'M3 12h18'],
   },
   {
     id: 2,
