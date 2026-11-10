@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = '6281999900900'
+const WHATSAPP_NUMBER = '6281999900900'
 export const PHONE = '0341 408 408'
 export const PHONE_MOBILE = '081 999 900 900'
 export const EMAIL = 'marketingutero@gmail.com'
