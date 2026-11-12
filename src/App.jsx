@@ -24,6 +24,8 @@ import Clients from './components/sections/Clients'
 import Legal from './components/sections/Legal'
 import CompanyProfile from './components/sections/CompanyProfile'
 import Contact from './components/sections/Contact'
+import ServicePage from './components/sections/ServicePage'
+import { getSeoPage } from './data/seoPages'
 
 const SECTION_IDS = [
   'layanan',
@@ -35,10 +37,23 @@ const SECTION_IDS = [
   'kontak',
 ]
 
-function App() {
+function App({ pathname = typeof window === 'undefined' ? '/' : window.location.pathname }) {
+  const seoPage = getSeoPage(pathname)
   const activeSection = useScrollSpy(SECTION_IDS)
   const lightbox = useLightbox(gallery)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  if (seoPage) {
+    return (
+      <>
+        <Header activeSection="" onOpenMenu={() => setMenuOpen(true)} />
+        <ServicePage page={seoPage} />
+        <Footer />
+        <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} activeSection="" />
+        <WAFloat />
+      </>
+    )
+  }
 
   return (
     <>

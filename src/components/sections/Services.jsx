@@ -3,6 +3,7 @@ import Lightbox from '../features/Lightbox'
 import { services } from '../../data/services'
 import { useLightbox } from '../../hooks/useLightbox'
 import styles from './Services.module.css'
+import { seoPages } from '../../data/seoPages'
 
 function Services() {
   const lightbox = useLightbox(services)
@@ -31,6 +32,9 @@ function Services() {
                     <span key={tag}>{tag}</span>
                   ))}
                 </div>
+                <a className={styles.moreLink} href={seoPages[index].path}>
+                  Pelajari layanan
+                </a>
               </div>
               <div className={styles.imgWrap}>
                 <button

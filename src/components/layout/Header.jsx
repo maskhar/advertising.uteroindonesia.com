@@ -2,16 +2,17 @@ import { useEffect, useRef, useState } from 'react'
 import Button from '../ui/Button'
 import { services } from '../../data/services'
 import { WHATSAPP_LINK } from '../../utils/constants'
+import { seoPages } from '../../data/seoPages'
 import styles from './Header.module.css'
 
 const NAV = [
-  { href: '#layanan', id: 'layanan', label: 'Layanan' },
-  { href: '#galeri', id: 'galeri', label: 'Galeri' },
-  { href: '#proses', id: 'proses', label: 'Proses Kerja' },
-  { href: '#interior', id: 'interior', label: 'Produk' },
-  { href: '#event', id: 'event', label: 'Event' },
-  { href: '#kenapa', id: 'kenapa', label: 'Kenapa Kami' },
-  { href: '#kontak', id: 'kontak', label: 'Kontak' },
+  { href: '/#layanan', id: 'layanan', label: 'Layanan' },
+  { href: '/#galeri', id: 'galeri', label: 'Galeri' },
+  { href: '/#proses', id: 'proses', label: 'Proses Kerja' },
+  { href: '/#interior', id: 'interior', label: 'Produk' },
+  { href: '/#event', id: 'event', label: 'Event' },
+  { href: '/#kenapa', id: 'kenapa', label: 'Kenapa Kami' },
+  { href: '/#kontak', id: 'kontak', label: 'Kontak' },
   { href: null, id: 'artikel', label: 'Artikel' },
 ]
 
@@ -39,7 +40,7 @@ function Header({ activeSection, onOpenMenu }) {
   return (
     <header className={styles.header}>
       <div className={styles.nav}>
-        <a href="#top" className={styles.logo}>
+        <a href="/" className={styles.logo}>
           UTERO
           <br />
           ADVERTISING
@@ -71,7 +72,7 @@ function Header({ activeSection, onOpenMenu }) {
                   {services.map((service) => (
                     <a
                       key={service.id}
-                      href={`#layanan-${service.id}`}
+                      href={seoPages[service.id - 1].path}
                       className={styles.dropdownLink}
                       onClick={() => setDropdownOpen(false)}
                     >

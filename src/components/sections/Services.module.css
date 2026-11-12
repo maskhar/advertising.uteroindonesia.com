@@ -55,6 +55,15 @@
   color: var(--ink-soft);
 }
 
+.moreLink {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--red-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .imgWrap {
   border-radius: var(--radius);
   overflow: hidden;

@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import './styles/main.css'
+import './analytics.js'
 import App from './App.jsx'
 
 function enableIframeWheelScroll() {
@@ -28,8 +29,12 @@ function enableIframeWheelScroll() {
 
 enableIframeWheelScroll()
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = document.getElementById('root')
+const app = <StrictMode><App /></StrictMode>
+
+
+if (root.hasChildNodes()) {
+  hydrateRoot(root, app)
+} else {
+  createRoot(root).render(app)
+}

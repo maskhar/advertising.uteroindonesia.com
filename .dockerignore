@@ -1,0 +1,16 @@
+.git
+.gitignore
+.codegraph
+node_modules
+dist
+dist-ssr
+docs
+*.env
+.env
+*.log
+*.local
+Dockerfile*
+compose*.yaml
+compose*.yml
+README.md
+utero adevertising index.html

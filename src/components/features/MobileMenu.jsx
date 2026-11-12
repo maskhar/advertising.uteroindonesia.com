@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { services } from '../../data/services'
+import { seoPages } from '../../data/seoPages'
 import styles from './MobileMenu.module.css'
 
 function MobileMenu({ open, onClose, activeSection }) {
@@ -8,12 +9,12 @@ function MobileMenu({ open, onClose, activeSection }) {
   if (!open) return null
 
   const links = [
-    { href: '#layanan', label: 'Layanan' },
-    { href: '#galeri', label: 'Galeri' },
-    { href: '#proses', label: 'Proses Kerja' },
-    { href: '#event', label: 'Event' },
-    { href: '#kenapa', label: 'Kenapa Kami' },
-    { href: '#kontak', label: 'Kontak' },
+    { href: '/#layanan', label: 'Layanan' },
+    { href: '/#galeri', label: 'Galeri' },
+    { href: '/#proses', label: 'Proses Kerja' },
+    { href: '/#event', label: 'Event' },
+    { href: '/#kenapa', label: 'Kenapa Kami' },
+    { href: '/#kontak', label: 'Kontak' },
   ]
 
   const closeAll = () => {
@@ -45,10 +46,10 @@ function MobileMenu({ open, onClose, activeSection }) {
           </button>
           {produkOpen && (
             <div className={styles.submenu}>
-              {services.map((service) => (
+              {services.map((service, index) => (
                 <a
                   key={service.id}
-                  href={`#layanan-${service.id}`}
+                  href={seoPages[index].path}
                   className={styles.subLink}
                   onClick={closeAll}
                 >
@@ -58,7 +59,7 @@ function MobileMenu({ open, onClose, activeSection }) {
             </div>
           )}
           {links.map((link) => {
-            const id = link.href.replace('#', '')
+            const id = link.href.split('#')[1]
             return (
               <a
                 key={link.href}

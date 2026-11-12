@@ -52,11 +52,41 @@ npm run preview   # preview hasil build
 npm run lint      # oxlint
 ```
 
+## Deployment Docker
+
+Website production berjalan melalui Nginx pada port host `8090`.
+
+Untuk mengaktifkan Google Analytics 4 (GA4), isi Measurement ID milik properti Anda di file `.env` pada folder proyek:
+
+```dotenv
+GA4_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+Ganti `G-XXXXXXXXXX` dengan ID asli dari Google Analytics > Admin > Data streams > Web > Measurement ID. Tanpa ID asli, tracking GA4 tidak aktif. ID digunakan saat build image, sehingga sesudah mengisi/mengubah `.env` wajib build ulang:
+
+```bash
+docker compose up -d --build
+docker compose ps
+docker compose logs -f
+```
+
+Buka `http://localhost:8090`. Untuk menghentikan layanan:
+
+```bash
+docker compose down
+```
+
+## SEO & Indexing
+
+- Beranda dan enam halaman layanan di `/layanan/.../` diprerender sebagai HTML lengkap, masing-masing dengan title, description, canonical, Open Graph, Twitter Card, H1, dan structured data.
+- `robots.txt` mengizinkan crawling; `sitemap.xml` berisi tujuh URL. Fragment section `/#galeri` bukan halaman indeks tersendiri; halaman layanan memiliki URL unik dan tautan internal.
+- Daftarkan `https://advertising.uteroindonesia.com/` sebagai properti di Google Search Console, kirim `https://advertising.uteroindonesia.com/sitemap.xml`, lalu gunakan URL Inspection untuk URL prioritas. Proses indeks/ranking tetap diputuskan Google dan tidak dapat dijamin cepat.
+- Periksa status DNS, respons HTTPS, dan metadata dari internet setelah deploy. Host yang digunakan saat pengembangan tidak bisa resolve domain publik, jadi audit Search Console/hasil pencarian belum bisa diverifikasi dari host ini.
+
 ## Struktur Data Galeri
 
 Setiap item galeri: `{ id, title, image, thumb }`. `image` dipakai di lightbox, `thumb` untuk grid masonry (saat ini keduanya placeholder).
 
 ## Catatan
 
-- Docker/tempat-deploy dikerjakan terpisah (belum termasuk di repo ini).
 - Dokumen desain & penjadwalan: `docs/SDD.md` dan `docs/TODO.md`.

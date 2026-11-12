@@ -1,0 +1,13 @@
+name: website-utero-advertising
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GA4_MEASUREMENT_ID: ${GA4_MEASUREMENT_ID:-}
+    container_name: utero-advertising
+    restart: unless-stopped
+    network_mode: bridge
+    ports:
+      - "8090:80"
