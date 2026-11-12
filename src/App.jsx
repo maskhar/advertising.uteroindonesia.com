@@ -42,7 +42,6 @@ function App({ pathname = typeof window === 'undefined' ? '/' : window.location.
   const activeSection = useScrollSpy(SECTION_IDS)
   const lightbox = useLightbox(gallery)
   const [menuOpen, setMenuOpen] = useState(false)
-
   if (seoPage) {
     return (
       <>

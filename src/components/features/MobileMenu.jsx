@@ -65,13 +65,12 @@ function MobileMenu({ open, onClose, activeSection }) {
                 key={link.href}
                 href={link.href}
                 className={`${styles.link} ${activeSection === id ? styles.active : ''}`}
-                onClick={onClose}
+                onClick={closeAll}
               >
                 {link.label}
               </a>
             )
           })}
-          <span className={styles.link}>Artikel</span>
         </nav>
       </div>
     </div>

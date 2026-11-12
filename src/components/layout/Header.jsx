@@ -13,7 +13,6 @@ const NAV = [
   { href: '/#event', id: 'event', label: 'Event' },
   { href: '/#kenapa', id: 'kenapa', label: 'Kenapa Kami' },
   { href: '/#kontak', id: 'kontak', label: 'Kontak' },
-  { href: null, id: 'artikel', label: 'Artikel' },
 ]
 
 function Header({ activeSection, onOpenMenu }) {
@@ -81,7 +80,7 @@ function Header({ activeSection, onOpenMenu }) {
                   ))}
                 </div>
               </div>
-            ) : link.href ? (
+            ) : link.href.startsWith('#') ? (
               <a
                 key={link.href}
                 href={link.href}
@@ -90,9 +89,9 @@ function Header({ activeSection, onOpenMenu }) {
                 {link.label}
               </a>
             ) : (
-              <span key={link.id} className={styles.link}>
+              <a key={link.href} href={link.href} className={styles.link}>
                 {link.label}
-              </span>
+              </a>
             ),
           )}
         </nav>

@@ -48,13 +48,13 @@ function Services() {
             </div>
           ))}
 
-      <Lightbox
-        isOpen={lightbox.isOpen}
-        item={lightbox.item}
-        onClose={lightbox.close}
-        onNext={lightbox.next}
-        onPrev={lightbox.prev}
-      />
+          <Lightbox
+            isOpen={lightbox.isOpen}
+            item={lightbox.item}
+            onClose={lightbox.close}
+            onNext={lightbox.next}
+            onPrev={lightbox.prev}
+          />
         </div>
       </div>
     </section>
