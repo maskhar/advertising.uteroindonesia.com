@@ -165,7 +165,8 @@
   }
 
   .inner {
-    padding: 84px 0 40px;
+    padding-top: 84px;
+    padding-bottom: 40px;
   }
 
   .tag {
