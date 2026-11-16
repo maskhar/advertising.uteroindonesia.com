@@ -20,3 +20,17 @@
 .active {
   opacity: 1;
 }
+
+@media (max-width: 560px) {
+  .slider {
+    aspect-ratio: 2 / 1;
+  }
+
+  .slide {
+    object-position: center;
+  }
+
+  .slide:not(:first-child) {
+    object-position: left center;
+  }
+}
